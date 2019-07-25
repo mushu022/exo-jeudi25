@@ -13,9 +13,10 @@
     <div all-of-button>
         <div nul>
             <button>0</button>
-            <button>+</button>        
-         
+            <button>+</button>
+
             <button value="=">=</button>
+
             <button>CE</button>
 
         </div>
@@ -37,21 +38,36 @@
             <button value="9">9</button>
             <button>*</button>
         </div>
-
-
+        <div>
+            <buttontype submit></buttontype></button>
         </div>
+
+    </div>
     </div>
 </body>
 
 <script>
+    function affichage(result) {
+
+        console.log(this.value);
+
+    }
 
 
 
 
+    let buttons = document.getElementsByTagName("button");
+    for (let i = 0; i < buttons.length; i++) {
+        // Faire quelque chose avec un paragraphe grâce à paragraphs[i]
+        buttons[i].addEventListener("click", affichage);
+    }
 
 
+    input1 = parseInt(input1)
+    input2 = parseInt(input2)
 
-
+    let results = document.querySelectorAll('.resultat')
+    results[0].innerHTML = input1 + ' + ' + input2 + ' = ' + (input1 + input2)
 </script>
 
 </html>
