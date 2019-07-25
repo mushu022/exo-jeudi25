@@ -1,0 +1,14 @@
+body {
+    background-color: brown;
+    
+}
+table{
+    background-color: aliceblue;
+}
+
+tr{
+    color: brown;
+    margin-left : auto;
+    margin-right : auto;
+    width : 10%;
+}

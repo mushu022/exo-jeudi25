@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    ​
+
+    <div>
+
+        <p id="mypara">Coucou les <span>gens</span></p>
+
+        <a href="index.html" id="dynamicLink">Test</a>
+
+        ​
+
+        <ul>
+
+            <li class="active"></li>
+
+            <li></li>
+
+        </ul>
+
+    </div>
+
+    <script>
+        let p = document.getElementById("mypara");
+
+        console.log(p.innerHTML);
+
+        p.innerHTML = "<a href='#'>Bonjour</a>";
+
+        ​
+
+        let link = document.getElementById("dynamicLink");
+
+        link.href = "contact.html";
+
+        ​
+
+        let activeEl = document.getElementsByClassName("active");
+
+        for (let i = 0; i < activeEl.length; i++)
+
+        {
+
+            activeEl[i].className = "active is-important";
+
+        }
+    </script>
+
+
+/*<ul>
+//<li> <a href="/accueil">Accueil</a> </li>
+//<li> <a href="/portfolio">Portfolio</a></li>
+//<li> <a href="/contact">Contact</a></li>
+//</ul>
+
+//<script>
+//let InactiveEl = document.getElementsByTagName("a");
+
+//for (let i = 0; i < InactiveEl.length; i++)
+
+//{InactiveEl[i].href = "#";}
+//</script>
+</body>
+
+</html>
+
+
